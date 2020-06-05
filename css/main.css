@@ -10,6 +10,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 a {
@@ -21,9 +22,8 @@ a {
 
 .header {
   width: 100%;
-  height: 140px;
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 .social {
@@ -59,10 +59,9 @@ a {
 .nav__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 90px;
   max-width: 980px;
   margin: auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 
 .nav__logo {
@@ -83,10 +82,9 @@ a {
 .main {
   background: url("../assets/img/autumn_bg.jpg") center / cover;
   text-align: center;
-  height: calc(100vh - 140px);
   display: flex;
   align-items: center;
-
+  height: calc(100% - 162px);
 }
 
 .main__contenedor {
@@ -97,8 +95,8 @@ a {
   color: white;
   font: 50px 'Roboto Slab';
   text-shadow: 0px 0px 3px black;
-  max-width: 600px;
-  padding: 10px;
+  max-width: 700px;
+  padding: 20px;
   margin: 20px auto;
 }
 
@@ -263,6 +261,7 @@ a {
 .contacto__correo,
 .contacto__mensaje {
   display: flex;
+  align-items: center;
 
 }
 
@@ -297,4 +296,5 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
