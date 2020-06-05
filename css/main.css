@@ -1,0 +1,285 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url("../assets/RobotoMono-Medium.ttf")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline;
+
+}
+
+.header {
+  width: 100%;
+  height: 140px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.social {
+  height: 50px;
+  background: #47cfac;
+}
+
+.social__container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  max-width: 980px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.social__icons a {
+  margin-left: 20px;
+}
+
+.social__icons .fab {
+  color: #2C3A47;
+  font-size: 26px;
+}
+
+.social__icons .fab:hover {
+  color: black;
+}
+
+
+
+.nav__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+  max-width: 980px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo img {
+  width: 220px;
+}
+
+.nav__perfil {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.main {
+  background: url("../assets/img/nasa_bg.jpg") center / cover;
+  text-align: center;
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+
+}
+
+.main__contenedor {
+  width: 100%;
+}
+
+.main__title {
+  color: white;
+  font: 50px 'Roboto Slab';
+  text-shadow: 0px 0px 3px black;
+  max-width: 600px;
+  padding: 10px;
+  margin: 20px auto;
+}
+
+.main__button {
+  padding: 15px 50px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #47cfac;
+  color: black;
+}
+
+.main__button--dark {
+  padding: 15px 50px;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #2C3A47;
+  color: #47cfac;
+}
+
+.noticias {
+  background: rgb(226, 226, 226);
+}
+
+.noticias__container {
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.noticias__main {
+  grid-column: span 2;
+}
+
+.noticias__title {
+  margin-bottom: 20px;
+  font: bold 30px 'Roboto Slab';
+}
+
+.noticias__img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.noticias__description {
+  align-self: center;
+  line-height: 1.5;
+}
+
+.noticias__description h2 {
+  font: bold 40px 'Roboto Slab';
+}
+
+.noticias__description p {
+  margin: 20px 0;
+}
+
+.post__button {
+  border: 1px solid #aaa;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.post__button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.post-list {
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.post-list__title {
+  grid-column: span 3;
+  padding: 20px 0;
+  border-bottom: 2px solid rgb(226, 226, 226);
+  text-align: center;
+}
+
+.post__img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+
+.post__title {
+  margin: 15px 0;
+  font: bold 20px 'Roboto Slab';
+}
+
+.post__text {
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.main-post {
+  max-width: 980px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.main-post__img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.main-post__title {
+  font: bold 50px 'Roboto Slab';
+  margin: 20px 0;
+}
+
+.main-post__subtitle {
+  border-bottom: 2px solid rgb(226, 226, 226);
+  font: bold 20px 'Roboto Slab';
+  margin-top: 20px;
+}
+
+.main-post__text {
+  line-height: 2;
+  font-size: 18px;
+}
+
+.contacto {
+  background: rgb(226, 226, 226);
+}
+
+.contacto__container {
+  max-width: 980px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 50px 20px;
+}
+
+.contacto__correo,
+.contacto__mensaje {
+  display: flex;
+
+}
+
+.contacto__correo:hover img,
+.contacto__mensaje:hover img {
+  transform: rotate(30deg);
+  transition: 0.5s;
+}
+
+
+
+.contacto__img {
+  height: 100px;
+  transition: 0.5s;
+}
+
+.contacto__description {
+  padding: 15px;
+  line-height: 1.5;
+}
+
+.contacto__title {
+  font: bold 20px 'Roboto Slab';
+  margin-bottom: 5px;
+}
+
+.footer {
+  background: #2C3A47;
+  color: white;
+  border-top: 35px solid #47cfac;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
